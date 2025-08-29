@@ -1,0 +1,81 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.header {
+  min-height: 80px;
+  padding-bottom: 5px;
+  background-color: $color-black;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .menu {
+    margin-right: 50px;
+    margin-left: 70px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .search {
+    margin-right: 67px;
+  }
+
+  &__phone {
+    padding-left: 28px;
+    margin-right: 37px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-accent;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url('/src/img/icons/icon-phone.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__basket {
+    width: 30px;
+    height: 30px;
+    background-image: url('/src/img/icons/icon-basket.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -3px;
+      right: -7px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #142b2b;
+      background-color: $color-accent;
+    }
+  }
+}

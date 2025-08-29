@@ -1,0 +1,75 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixins.scss' as *;
+
+.btn-def {
+  @include button;
+  width: 220px;
+  color: $color-dark2;
+  background-color: $color-accent;
+  transition: all .3s;
+
+  &:focus {
+    outline: 1px solid $color-purpure;
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      color: $color-white;
+      background-color: $color-purpure;
+    }
+  }
+
+  &:active {
+    outline: 0;
+    color: $color-white;
+    background-color: $color-purpure;
+    box-shadow: inset 0 0 10px 0 #1b000e;
+  }
+
+  // &:progress {
+
+  // }
+
+  &:disabled {
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    background-color: $color-dark;
+  }
+}
+
+.btn-basket {
+  @include button;
+  width: 255px;
+  color: $color-white;
+  border: 1px solid $color-white;
+  transition: all .3s;
+
+  &:focus {
+    border: 0.5px solid $color-accent;
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      border: 0 solid $color-accent;
+      color: $color-dark2;
+      background-color: $color-accent;
+    }
+  }
+  
+  &:active {
+    border: 0 solid $color-accent;
+    color: $color-dark2;
+    background-color: $color-accent;
+    box-shadow: inset 0 0 10px 0 #01281f;
+  }
+
+  // &:progress {
+
+  // }
+
+  &:disabled {
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    background-color: $color-dark;
+  }
+}

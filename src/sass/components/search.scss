@@ -1,0 +1,29 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.search {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+  
+  // &__input {
+  //   display: block;
+  //   width: 100%;
+  //   font: inherit;
+  //   line-height: 1.5;
+    
+  //   &::placeholder {
+  //     font-weight: 400;
+  //     font-size: 14px;
+  //     letter-spacing: 0.04em;
+  //     text-transform: uppercase;
+  //     color: $color-white; 
+  //   }
+  // }
+
+  // &__input--active {
+  //   padding-right: 24px;
+  //   max-width: 366px;
+  //   width: 100%;
+  //   border-bottom: 1px solid;
+  // }

@@ -1,0 +1,44 @@
+@use '/src/sass/base/variables.scss' as *;
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-white;
+  background-color: $color-dark;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--insta {
+      background-image: url('./../../img/icons/icon-insta.svg');
+    }
+    &--whatsapp {
+      background-image: url('./../../img/icons/icon-whatsapp.svg');
+    }
+    &--viber {
+      background-image: url('./../../img/icons/icon-viber.svg');
+    }
+  }
+}
+
+.ui {
+  padding: 250px 0;
+}

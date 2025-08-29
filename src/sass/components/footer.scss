@@ -1,0 +1,121 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.footer {
+  padding-bottom: 60px;
+  background-color: $color-black;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__logo {
+    margin-bottom: 8px;
+  }
+
+  &__details {
+    max-width: 244px;
+    margin-right: 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: 10px;
+  }
+
+  &__details-text {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__catalog,
+  &__bouquet,
+  &__right {
+    margin-top: 30px;
+  }
+
+  &__catalog {
+    margin-right: 60px;
+  }
+
+  &__list {
+    max-width: 130px;
+  }
+
+  &__list-link {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__logo-mob {
+    display: none;
+  }
+
+  &__menu {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__menu-mob {
+    display: none;
+  }
+  &__menu-link {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
+
+  &__contacts {
+    max-width: 245px;
+  }
+  
+  &__contacts-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 38px;
+  }
+
+  &__contact-title {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: 6px;
+  }
+
+  &__contact-descr {
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}

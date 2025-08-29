@@ -1,0 +1,19 @@
+// Libs
+@use '/src/sass/libs/normalize';
+
+// Base
+@use '/src/sass/base/fonts';
+@use '/src/sass/base/reset';
+@use '/src/sass/base/variables';
+@use '/src/sass/base/mixins';
+@use '/src/sass/base/base';
+
+// Components
+@use '/src/sass/components/header';
+@use '/src/sass/components/footer';
+@use '/src/sass/components/logo';
+@use '/src/sass/components/nav';
+@use '/src/sass/components/search';
+@use '/src/sass/components/buttons';
+
+// Blocks

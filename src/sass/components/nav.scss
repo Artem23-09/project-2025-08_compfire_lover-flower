@@ -1,0 +1,27 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-white;
+    transition: all .3s;
+
+    @media(any-hover: hover) {
+      &:hover {
+        color: $color-accent;
+        text-decoration: underline;
+        text-decoration-color: currentColor;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+}
